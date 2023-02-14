@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f742a00235.js" crossorigin="anonymous"></script>
+    <style>
+        
+        .foto-perfil {
+            height: 150px;
+            width: auto;
+            border-radius: 50%;
+            max-width: 100%;
+        }
+        .corprimaria {
+            background-color: #9400D3;
+        }
+        .corsecundaria {
+            background-color: dimgray;
+
+        }
+        p {
+            font-family:Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color:black !important;
+        }
+        .icones {
+            padding-left: 5px;
+        }
+
+        .titulosBrancos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: white;
+        }
+        .titulosRoxos {
+            text-decoration: underline;
+            text-underline-position: below;
+            padding-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #9400D3;
+        }
+        .textoBranco {
+            color: white !important;
+        }
+        .jumbotron {
+            margin-bottom: 0px;
+        }
+        .textofooter {
+            margin: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .titulo-proj {
+            font-size: 20px;
+        }
+        .btn-download{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Arial";
+        }
+        .link{
+            font-size: 32px;
+            background-color: #9400D3;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: 1px solid #a33ccfaf;
+            border-left: 10px solid #a33ccfaf;
+            transition: all 0.25s ease-in-out;
+        }
+        a:hover{
+            color: #a33ccfaf;
+            background-color: white;
+        }
+        .hover-image {
+            display: block;
+  left: 0;
+  top: 0;
+}
+.hover-image span {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 200px;
+  width: 100%;
+  line-height: 45px;
+  height: 45px;
+  display: block;
+  background-color: #00000059;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto";
+  left: 0;
+  top: 0;
+  margin: auto;
+  transition: all 0.4s ease-in-out;
+}
+.hover-image:hover span {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light corsecundaria">
+        <a class="navbar-brand textoBranco" href="#">Jaércio F S Junior</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link textoBranco" href="#projetos">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textoBranco" href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textoBranco" href="#cv">Curriculum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link textoBranco" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="jumbotron text-center corprimaria textoBranco">
+        <div class="container">
+            <img class="foto-perfil" src="https://i.postimg.cc/mrRC8qKY/jaercio-junior.jpg" alt="">
+            <h1 class="jumbotron-heading">Jaércio Junior</h1>
+            <p class="lead textoBranco">Front-End Developer, Designer</p>
+            <p>
+                <a href="#contato" class="btn btn-dark my-2">Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/jaercio-junior/"><i class="fab textoBranco fa-linkedin"></i></a>
+            <a href="https://github.com/Jaercio"><i class="icones textoBranco fab fa-github"></i></a>
+    </section>
+    <div class="album py-5 bg-light" id="projetos">
+        <div class="container">
+<h2 class="jumbotron-heading text-center titulosRoxos">Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                       
+                        <img class="image"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%;"
+                            src="https://i.postimg.cc/52C8y1pK/inventory-two-druggists-in-lab-coats-in-the-process-of-inventory-in-a-drugstore.jpg" data-holder-rendered="true">
+                            <div class="middle">
+                                <div class="text"  style="margin-top: -150px;">C#</div>
+                              </div>
+                        
+                        <div class="card-body">
+                            <p class="titulo-proj">Sistema de Farmácia em C#</p><br>
+                            <h5>Sistema de controle de pedidos em uma farmácia, desenvolvido nas linguagens:</h5>
+                            <ul>
+                                <li>C#</li>
+                                <li>SQL</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/Jaercio/Farmacia-em-C-Sharp"><button type="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://github.com/Jaercio/Farmacia-em-C-Sharp"><button type="button"
+                                            class="btn btn-sm btn-outline-primary">Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;"
+                            src="https://i.postimg.cc/NFpb8tdP/em-breve.jpg" data-holder-rendered="true">
+                        <div class="card-body">
+                            <p class="card-text">Descrição do projeto</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="link do site hospedado"><button type="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="link do codigo no git"><button type="button"
+                                            class="btn btn-sm btn-outline-primary">Código</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sobre mim-->
+    <section class="jumbtron text-center corprimaria" id="sobre-mim">
+        <div class="container">
+            <h2 class="jumbotrom-heading titulosBrancos">Sobre mim</h2>
+            <p class="lead textoBranco">Descrição sobre mim</p>
+        </div>
+    </section>
+    <!--Curriculum-->
+    <section class="jumbtron text-center btn-download " id="cv">
+        <div class="container">
+            <h2 style="padding-top: 60px" class="jumbotrom-heading titulosRoxos">Curriculum</h2>
+            <a href="curriculo jaercio-junior.pdf" download class="link" >Download CV</a>
+            <h2 style="padding-bottom: 60px; margin-bottom: 0px;"> </h2>
+        </div>
+    </section>
+    <!--Contato-->
+    <section class="corprimaria" id="contato">
+        <div>
+            <div class="container-fluid">
+                <h3 style="padding-top: 60px" class="text-center titulosBrancos">Disponível para Oportunidades</h3>
+                <a href="mailto:j.junior200344@gmail.com"><h4 style="padding-bottom: 60px; margin-bottom: 0px;"class="text-center textoBranco">👉j.junior200344@gmail.com👈</h4></a>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="text-center corsecundaria textofooter ">
+        <p class="textoBranco">Copyright © 2023 Jaércio Junior</p>
+    </footer>
+</body>
+</html>
